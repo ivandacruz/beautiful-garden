@@ -21,12 +21,14 @@ and  _open with live server_ or "Alt+L Alt+O"
 ## Tumb Images
 
 
-<a href="http://google.com/">Google</a>
+<!-- <a href="http://google.com/">Google</a> -->
+### progress images
+
 
 <p float="center" align="center" style="margin: 5rem;">
-<img src="./img-tumb/screen-01.png" width="30%"/>
-<img src="./img-tumb/screen-02.png" width="30%" height="40%"/>
-<img src="./img-tumb/screen-02.png" width="30%"/>
+<img src="./img-tumb/tumb-01.png" width="30%"/>
+<img src="./img-tumb/tumb-cel-01.png" width="30%" height="40%"/>
+<!-- <img src="./img-tumb/screen-02.png" width="30%"/> -->
 </p>
 
 
