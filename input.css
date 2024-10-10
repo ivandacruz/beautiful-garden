@@ -42,6 +42,7 @@ h3 {
 .btn span {
     @apply font-bold;
 }
+
 .btn:hover {
     @apply opacity-85;
 }
@@ -49,6 +50,11 @@ h3 {
 .btn_outline {
     @apply bg-transparent;
 }
+
 .btn_outline:hover {
     @apply bg-yellow-500;
+}
+
+.popular_card:hover img {
+    @apply -top-8;
 }
