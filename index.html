@@ -8,6 +8,9 @@
   <!-- FAVICON -->
   <link rel="shortcut icon" href="assets/img/favi.png" />
 
+  <!-- SWIPER CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
   <!-- REMIX ICON -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
     integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
@@ -379,13 +382,93 @@
     </section>
 
     <!-- Review -->
-     <section id="review">
+     <section class="relative mb-20 md-20 md:mb-28 overflow-hidden" id="review">
+      <div class="absolute -top-8 -left-12 opacity-50">
+        <img src="assets/img/left-04.png" class="w-40 md:w-52 xl:w-64" alt="leaf_image">
+      </div>
       <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
-        <h2>Customer Review</h2>
-        <p></p>
+        <h2 class="title">Customer Review</h2>
+        <p class="max-w-2xl">Follow instruction fro more</p>
+      </div>
+
+      <div class="container">
+        <div class="swiper py-12">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                <p class="font-Lobster">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, consequatur! Debitis ducimus non consequatur soluta delectus cum quod, distinctio corporis optio.</p>
+                <div class="flex items-center">
+                  <img src="assets/img/review-1.png" class="w-12 h-12 rounded-full" alt="review_image">
+                  <div class="ml-2">
+                    <p class="text-yellow-500 uppercase">Eniko bourisk</p>
+                    <p>Design</p>
+                  </div>
+                  <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                <p class="font-Lobster">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, consequatur! Debitis ducimus non consequatur soluta delectus cum quod, distinctio corporis optio.</p>
+                <div class="flex items-center">
+                  <img src="assets/img/review-2.png" class="w-12 h-12 rounded-full" alt="review_image">
+                  <div class="ml-2">
+                    <p class="text-yellow-500 uppercase">Eniko bourisk</p>
+                    <p>Design</p>
+                  </div>
+                  <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                <p class="font-Lobster">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, consequatur! Debitis ducimus non consequatur soluta delectus cum quod, distinctio corporis optio.</p>
+                <div class="flex items-center">
+                  <img src="assets/img/review-3.png" class="w-12 h-12 rounded-full" alt="review_image">
+                  <div class="ml-2">
+                    <p class="text-yellow-500 uppercase">Eniko bourisk</p>
+                    <p>Design</p>
+                  </div>
+                  <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                <p class="font-Lobster">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, consequatur! Debitis ducimus non consequatur soluta delectus cum quod, distinctio corporis optio.</p>
+                <div class="flex items-center">
+                  <img src="assets/img/review-4.png" class="w-12 h-12 rounded-full" alt="review_image">
+                  <div class="ml-2">
+                    <p class="text-yellow-500 uppercase">Eniko bourisk</p>
+                    <p>Design</p>
+                  </div>
+                  <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-green-900 rounded-md p-6">
+                <p class="font-Lobster">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, consequatur! Debitis ducimus non consequatur soluta delectus cum quod, distinctio corporis optio.</p>
+                <div class="flex items-center">
+                  <img src="assets/img/review-5.png" class="w-12 h-12 rounded-full" alt="review_image">
+                  <div class="ml-2">
+                    <p class="text-yellow-500 uppercase">Eniko bourisk</p>
+                    <p>Design</p>
+                  </div>
+                  <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
      </section>
   </main>
+
+
+  <!-- seiper js -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- main js -->
   <script src="main.js"></script>
