@@ -36,6 +36,18 @@ const scrollUp = () => {
 window.addEventListener("scroll", scrollUp)
 
 // Change background header
+const scrollHeader = () => {
+    const header = document.getElementById("navbar")
+
+    if(this.scrollY >=50){
+        header.classList.add("border-b", "border-yellow-500")
+    }
+    else {
+        header.classList.remove("border-b", "border-yellow-500")
+    }
+}
+
+window.addEventListener("scroll", scrollHeader)
 
 // swipper
 const swiper = new Swiper('.swiper', {
@@ -67,5 +79,46 @@ const swiper = new Swiper('.swiper', {
 });
 
 // scroll sections active link
+const activeLink = () => {
+    const sections = document.querySelectorAll('section')
+    const navLinks = document.querySelectorAll(".nav-link")
+
+    let current = "home"
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+
+        if( this.scrollY >= sectionTop - 60 ) {
+            current = section.getAttribute("id")
+        }
+    })
+
+    navLinks.forEach(item => {
+        item.classList.remove("active")
+
+        if(item.href.includes(current)){
+            item.classList.add("active")
+        }
+    })
+}
+
+window.addEventListener("scroll", activeLink)
+
 
 // scroll reveal animation
+
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2500,
+    delay: 300,
+    reset: true
+})
+
+sr.reveal(`.home__data, .about__top, .popular__top`)
+sr.reveal(`.home__image`, {delay: 500, scale: 0.5})
+sr.reveal(`.service__card`, {delay: 500, scale: 0.5}, {interval: 100})
+
+sr.reveal(`.about__leaf`, {delay: 1000, origin: "right"} )
+sr.reveal(`.about__item__1-content, .about__item__2-img`, {origin: "right"} )
+sr.reveal(`.about__item__1-img, .about__item__2-content`, {origin: "left"} )

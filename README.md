@@ -54,6 +54,12 @@ and  _open with live server_ or "Alt+L Alt+O"
 
 [REMIXICON](https://cdnjs.com/libraries/remixicon)
 
+[ScrollReveal](https://scrollrevealjs.org/)
+
+> or
+
+[ScrollReveal Github](https://github.com/jlmakes/scrollreveal/blob/master/dist/scrollreveal.min.js)
+
 #
 
 |author: |[IvanC_Code](https://github.com/ivandacruz)| :heart: |

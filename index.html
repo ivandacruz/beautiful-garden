@@ -37,7 +37,7 @@
           class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
           <ul class="flex flex-col items-center gap-8 lg:flex-row">
             <li>
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#home" class="nav-link active">Home</a>
             </li>
             <li>
               <a href="#about" class="nav-link">About</a>
@@ -80,7 +80,7 @@
 
           <div class="flex flex-col items-center gap-5 lg:flex-row">
             <!-- content -->
-            <div class="w-full space-y-5 lg:w-1/2">
+            <div class="home__data w-full space-y-5 lg:w-1/2">
               <h1>
                 <span class="text-yellow-500">Plants</span> make a <br />
                 positive <span class="text-yellow-500">impact</span> on <br />
@@ -130,7 +130,7 @@
 
             <!-- image -->
             <div class="w-full relative lg:w-1/2">
-              <img src="assets/img/home.png" alt="home_image" />
+              <img src="assets/img/home.png" alt="home_image" class="home__image" />
 
               <!-- leaf -->
               <div
@@ -160,7 +160,7 @@
           class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <!-- card 1 -->
           <div
-            class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+            class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
             <div class="flex items-center gap-5">
               <i class="ri-truck-line text-3xl md:text-4xl xl:text-5xl"></i>
               <p class="md:text-lg font-bold">
@@ -177,7 +177,7 @@
 
           <!-- card 2 -->
           <div
-            class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+            class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
             <div class="flex items-center gap-5">
               <i
                 class="ri-customer-service-line text-3xl md:text-4xl xl:text-5xl"></i>
@@ -195,7 +195,7 @@
 
           <!-- card 3 -->
           <div
-            class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+            class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
             <div class="flex items-center gap-5">
               <i class="ri-plant-line text-3xl md:text-4xl xl:text-5xl"></i>
               <p class="md:text-lg font-bold">
@@ -212,7 +212,7 @@
 
           <!-- card 4 -->
           <div
-            class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+            class="service__card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
             <div class="flex items-center gap-5">
               <i
                 class="ri-money-dollar-circle-line text-3xl md:text-4xl xl:text-5xl"></i>
@@ -232,7 +232,7 @@
 
       <!-- About us -->
       <section id="about" class="relative overflow-hidden">
-        <div class="absolute -top-8 -right-12 opacity-50">
+        <div class="about__leaf absolute -top-8 -right-12 opacity-50">
           <img
             src="assets/img/left-03.png"
             alt="leaf_image"
@@ -240,14 +240,14 @@
         </div>
 
         <div
-          class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+          class="about__top flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
           <h2 class="title">About Us</h2>
           <p class="max-w-2xl">Follow instruction for more</p>
         </div>
 
         <div class="container space-y-10 xl:space-y-0">
           <!-- item 1 -->
-          <div class="flex flex-col items-center lg:flex-row gap-5">
+          <div class="about__item__1-img flex flex-col items-center lg:flex-row gap-5">
             <!-- image -->
             <div class="w-full lg:w-1/2">
               <img
@@ -257,7 +257,7 @@
             </div>
 
             <!-- content -->
-            <div class="w-full lg:w-1/2">
+            <div class="about__item__1-content w-full lg:w-1/2">
               <div class="space-y-5">
                 <h3>
                   Make your <span class="text-yellow-500">organic</span> <br />
@@ -274,7 +274,7 @@
           </div>
 
           <!-- item 2 -->
-          <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
+          <div class="about__item__2-img flex flex-col items-center lg:flex-row-reverse gap-5">
             <!-- image -->
             <div class="w-full lg:w-1/2">
               <img
@@ -284,7 +284,7 @@
             </div>
 
             <!-- content -->
-            <div class="w-full lg:w-1/2">
+            <div class="about__item__2-content w-full lg:w-1/2">
               <div class="space-y-5">
                 <h3>
                   Come with us <br />
@@ -305,7 +305,7 @@
 
       <!-- Popular -->
       <section id="popular" class="bg-green-900">
-        <div class="flex flex-col items-center gap-3 text-center mb-40">
+        <div class="popular__top flex flex-col items-center gap-3 text-center mb-40">
           <h2 class="title">Your Choice Plant</h2>
           <p class="max-w-2xl">Follow instruction for more</p>
         </div>
@@ -453,7 +453,7 @@
                       class="w-12 h-12 rounded-full"
                       alt="review_image" />
                     <div class="ml-2">
-                      <p class="text-yellow-500 uppercase">Eniko bourisk</p>
+                      <p class="text-yellow-500 uppercase">Jason bourisk</p>
                       <p>Design</p>
                     </div>
                     <i class="ri-double-quotes-r text-4xl ml-auto"></i>
@@ -473,8 +473,8 @@
                       class="w-12 h-12 rounded-full"
                       alt="review_image" />
                     <div class="ml-2">
-                      <p class="text-yellow-500 uppercase">Eniko bourisk</p>
-                      <p>Design</p>
+                      <p class="text-yellow-500 uppercase">Jhon Carter</p>
+                      <p>Manager</p>
                     </div>
                     <i class="ri-double-quotes-r text-4xl ml-auto"></i>
                   </div>
@@ -494,7 +494,7 @@
                       alt="review_image" />
                     <div class="ml-2">
                       <p class="text-yellow-500 uppercase">Eniko bourisk</p>
-                      <p>Design</p>
+                      <p>Developer</p>
                     </div>
                     <i class="ri-double-quotes-r text-4xl ml-auto"></i>
                   </div>
@@ -513,7 +513,7 @@
                       class="w-12 h-12 rounded-full"
                       alt="review_image" />
                     <div class="ml-2">
-                      <p class="text-yellow-500 uppercase">Eniko bourisk</p>
+                      <p class="text-yellow-500 uppercase">Enamy Smalin</p>
                       <p>Design</p>
                     </div>
                     <i class="ri-double-quotes-r text-4xl ml-auto"></i>
@@ -659,7 +659,7 @@
 
       <!-- Floral Image -->
       <div class="absolute bottom-0 left-0 opacity-20 pointer-events-none">
-        <img src="assets/img/close-up-green-plant-concept.jpg" class="w-full lg:w-1/2" alt="floral_image">
+        <img src="assets/img/floral.png" class="w-full lg:w-1/2" alt="floral_image">
       </div>
     </footer>
 
@@ -672,6 +672,8 @@
     <!-- swiper js -->
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!-- main js -->
     <script src="main.js"></script>
